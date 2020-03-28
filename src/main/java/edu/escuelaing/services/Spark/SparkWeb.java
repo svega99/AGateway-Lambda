@@ -35,6 +35,7 @@ public class SparkWeb {
                 + "<form action=\"/results\">"
                 + "  Enter a number <br>"
                 + "  <input type=\"number\" name=\"number\" >"
+				 + "  <input type=\"submit\" value=\"Submit\"> "
                 + "  <br><br>"
                 + "</form>"
                 + "<p>If you click the \"Submit\" button, the form-data will be sent to a page called \"/results\".</p>"
@@ -52,7 +53,7 @@ public class SparkWeb {
 		
         URLConnection con = API.openConnection();
         
-        String result = null;
+        String result = "";
         in = new BufferedReader(new InputStreamReader( con.getInputStream()));
 		
 		System.err.println("Conectado");
